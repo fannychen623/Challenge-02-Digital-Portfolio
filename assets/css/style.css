@@ -10,7 +10,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Georgia, serif;
     line-height: 1.75;
 }
 
@@ -24,6 +23,7 @@ header {
     height: 50px;
     color: var(--main);
     background-color: var(--background);
+    font-family: Georgia, serif;
 }
 
 nav {
@@ -56,16 +56,12 @@ a {
     border-bottom: 15px solid var(--theme);
 }
 
-/* brand name */
-h1 {
-    font-size: 36px;
-}
-
 /* primary content element */
 main {
     width: 100%;
     display: inline-block;
     padding: 25px;
+    font-family: Didot, serif;
 }
 
 .avatar {
@@ -73,25 +69,23 @@ main {
     width: 400px;
     border-radius: 50%;
     border: 15px solid var(--theme);
-    margin-top: -50px;
+    margin-top: -25px;
     margin-right: 40px;
     float: left;
 }
 
-/* main section boxes */
 #about {
     margin-bottom: 100px;
-    margin-left: 70px;
-    padding: 30px;
+    margin-left: 125px;
+    padding: 40px;
     height: fit-content;
     background-color: var(--theme);
     color: var(--main);
 }
 
-/* main section headings */
-h2 {
+h1 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 /* all standard text on the page */
@@ -99,15 +93,66 @@ p {
     font-size: 16px;
 }
 
-/* secondary content element */
-aside {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
+.projects {
+    color: var(--main);
+    background-color: var(--theme);
+    height: fit-content;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.main-project {
+    display: block;
+    width: 100%;
+}
+
+.main-project img {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    border-radius: 3%;
+}
+
+.main-caption {
+    color: var(--main);
+    background-color: var(--theme);
+    text-align: left;
+    font-size: 24px;
+    width: 30%;
+    height: fit-content;
+    padding: 5px;
+    position: relative;
+    top: -75%;
+}
+
+.secondary-projects {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.secondary-projects img {
+    width: 310px;
+    height: 310px;
+    margin: 5px;
+    margin-bottom: -20px;
+    border-radius: 10%;
+}
+
+.secondary-caption {
+    color: var(--main);
+    background-color: var(--theme);
+    text-align: left;
+    font-size: 14px;
+    width: 50%;
+    height: fit-content;
+    padding: 5px;
+    position: relative;
+    top: -70%;
+    left: 5px;
+}
+
 
 /* footer element styles */
 footer {
