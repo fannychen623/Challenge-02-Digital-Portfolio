@@ -5,6 +5,10 @@
     --background: #dae6ce;
 }
 
+* {
+    color: var(--main);
+}
+
 /* page background color */
 body {
     background-color: var(--background);
@@ -13,7 +17,6 @@ body {
 /* header with brand logo and page navigation */
 header {
     height: 50px;
-    color: var(--main);
     background-color: var(--background);
     font-family: Georgia, serif;
 }
@@ -32,7 +35,7 @@ nav ul li {
     margin-left: 25px;
 }
 
-a {
+nav ul li a {
     color: var(--theme);
 }
 
@@ -73,7 +76,6 @@ main {
     padding: 40px;
     height: fit-content;
     background-color: var(--theme);
-    color: var(--main);
 }
 
 h1 {
@@ -82,7 +84,6 @@ h1 {
 }
 
 .projects {
-    color: var(--main);
     background-color: var(--theme);
     height: fit-content;
     padding: 25px;
@@ -94,25 +95,26 @@ h1 {
 .main-project {
     display: block;
     width: 100%;
+    text-align: center;
 }
 
 .main-project img {
-    width: 100%;
-    height: 500px;
+    width: 75%;
+    height: 400px;
     margin-top: 10px;
     border-radius: 3%;
 }
 
 .main-caption {
-    color: var(--main);
     background-color: var(--theme);
     text-align: left;
     font-size: 24px;
-    width: 30%;
+    width: 35%;
     height: fit-content;
     padding: 10px;
     position: relative;
     top: -75%;
+    left: 12%;
 }
 
 .secondary-projects {
@@ -130,10 +132,10 @@ h1 {
 }
 
 .secondary-caption {
-    color: var(--main);
     background-color: var(--theme);
     text-align: left;
     font-size: 14px;
+    line-height: 1.5;
     width: 60%;
     height: fit-content;
     padding: 7px;
@@ -142,8 +144,19 @@ h1 {
     left: 5px;
 }
 
+.main-project:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.15);
+    z-index: 1;
+}
+
+.prework:hover, .mini1:hover, .challenge1:hover, .mini2:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.25);
+    z-index: 1;
+}
+
 #resume {
-    color: var(--main);
     background-color: var(--theme);
     width: 100%;
     padding: 25px;
@@ -152,24 +165,45 @@ h1 {
 }
 
 #contact {
-    color: var(--main);
     background-color: var(--theme);
-    width: 30%;
+    width: fit-content;
     padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 0 auto;
     margin-top: 20px;
     text-align: center;
 }
 
-#contact a {
-    color: var(--main);
+#contact ul li {
+    line-height: 2.5;
 }
 
 /* footer element styles */
 footer {
-    color: var(--theme);
+    width: 100%;
+    background-color: var(--theme);
     font-size: 20px;
     line-height: 1.75;
-    padding-bottom: 50px;
+    padding: 25px;
     text-align: center;
 }
+
+#top-button {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 30px; 
+    z-index: 99; 
+    background-color: var(--main); 
+    color: var(--theme);
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 10px;
+    border: none;
+  }
+  
+  #top-button:hover {
+    background-color: var(--theme);
+    color: var(--main);
+  }
