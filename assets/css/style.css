@@ -1,0 +1,117 @@
+/* all element styles */
+:root {
+    --main: white;
+    --theme: rgb(51, 98, 51);
+    --theme2: rgb(76, 122, 76);
+    --background: #dae6ce;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, serif;
+    line-height: 1.75;
+}
+
+/* page background color */
+body {
+    background-color: var(--background);
+}
+
+/* header with brand logo and page navigation */
+header {
+    height: 50px;
+    color: var(--main);
+    background-color: var(--background);
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+/* navigation bar item list */
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--theme);
+}
+
+/* hero image */
+.hero {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 50px;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top: 15px solid var(--theme);
+    border-bottom: 15px solid var(--theme);
+}
+
+/* brand name */
+h1 {
+    font-size: 36px;
+}
+
+/* primary content element */
+main {
+    width: 100%;
+    display: inline-block;
+    padding: 25px;
+}
+
+.avatar {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 15px solid var(--theme);
+    margin-top: -50px;
+    margin-right: 40px;
+    float: left;
+}
+
+/* main section boxes */
+#about {
+    margin-bottom: 100px;
+    margin-left: 70px;
+    padding: 30px;
+    height: fit-content;
+    background-color: var(--theme);
+    color: var(--main);
+}
+
+/* main section headings */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* all standard text on the page */
+p {
+    font-size: 16px;
+}
+
+/* secondary content element */
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+
+/* footer element styles */
+footer {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
