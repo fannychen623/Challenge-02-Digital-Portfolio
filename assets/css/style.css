@@ -1,26 +1,28 @@
-/* all element styles */
+/* defined variables */
 :root {
     --main: white;
     --theme: rgb(87, 132, 87);
     --background: #dae6ce;
 }
 
+/* all element styles */
 * {
     color: var(--main);
 }
 
-/* page background color */
+/* page background */
 body {
     background-color: var(--background);
 }
 
-/* header with brand logo and page navigation */
+/* header with page navigation */
 header {
     height: 50px;
     background-color: var(--background);
     font-family: Georgia, serif;
 }
 
+/* navigation bar */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -47,7 +49,7 @@ nav a {
     display: flex;
 }
 
-/* primary content element */
+/* primary content */
 main {
     width: 100%;
     display: block;
@@ -55,6 +57,7 @@ main {
     font-family: Didot, serif;
 }
 
+/* circle avatar image for about section */
 .avatar {
     height: 400px;
     width: 400px;
@@ -65,6 +68,7 @@ main {
     float: left;
 }
 
+/* about section style */
 #about {
     margin-bottom: 100px;
     margin-left: 125px;
@@ -79,7 +83,8 @@ h1 {
     font-size: 36px;
 }
 
-.projects {
+/* portfolio section style */
+#portfolio {
     background-color: var(--theme);
     height: fit-content;
     padding: 25px;
@@ -88,6 +93,7 @@ h1 {
     justify-content: center;
 }
 
+/* highlighted main project display */
 .main-project {
     display: block;
     width: 100%;
@@ -116,6 +122,7 @@ h1 {
     left: 12.5%;
 }
 
+/* secondary projects display */
 .secondary-projects {
     display: inline-flex;
     flex-wrap: wrap;
@@ -145,6 +152,7 @@ h1 {
     left: 5px;
 }
 
+/* hover transitions */
 .main-project:hover {
     transition: transform 0.5s ease-in-out;
     transform: scale(1.15);
@@ -157,6 +165,7 @@ h1 {
     z-index: 1;
 }
 
+/* resume section */
 #resume {
     background-color: var(--theme);
     width: 100%;
@@ -165,6 +174,7 @@ h1 {
     text-align: center;
 }
 
+/* contact section */
 #contact {
     background-color: var(--theme);
     width: fit-content;
@@ -180,7 +190,7 @@ h1 {
     line-height: 2.5;
 }
 
-/* footer element styles */
+/* footer section */
 footer {
     width: 100%;
     background-color: var(--theme);
@@ -190,6 +200,7 @@ footer {
     text-align: center;
 }
 
+/* scroll to top button style */
 #top-button {
     display: none; 
     position: fixed; 
@@ -209,6 +220,7 @@ footer {
     color: var(--main);
 }
 
+/* responsive screen layout */
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;

@@ -1,87 +1,101 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Fanny Chen Digital Portfolio</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
+  <!-- link local assets and define the title -->
+  <head>
+      <title>Fanny Chen Digital Portfolio</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="./assets/css/reset.css" />
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
 
-    <body>
-      <header class="header">
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+  <body>
+    <!-- header contains the navigation bar for the page -->
+    <header class="header">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-      <figure id="home" class="hero" title="Fanny Chen"></figure>
-      
-      <main>
-        <img src="./assets/images/Avatar.JPG" alt="Fanny Chen Avatar" class="avatar" />
+    <!-- hero image for the page -->
+    <figure id="home" class="hero" title="Fanny Chen"></figure>
 
-        <section id="about">
-            <h1>About</h1>
-            <p>
-                Born and raised in Brooklyn, NY. I graduated from The Cooper Union with a bachelors degree in Chemical Engineering. Post-graduation I worked as a Production Engineer at a medical device manufacturing company. Currently, I am a Physicist at the Memorial Sloan Kettering Cancer. I am part of the department of Medical Physics and assist with radiation therapy treatments. In addition to patient care work, I am also responsibile for a lot of the technical and digital projects at the office. I work closely with the IT department to create new applications and databases for the department. To further enhance my knowledge in the field, I am also attending the Columbia Coding Bootcamp part-time. 
-            </p>
-        </section>
+    <!-- sections defined in the navigation bar -->
+    <main>
+      <!-- avatar image for the about section -->
+      <img src="./assets/images/Avatar.JPG" alt="Fanny Chen Avatar" class="avatar" />
 
-        <section id="portfolio" class="projects">
-            <h1>Portfolio</h1>
-            <section class="main-project">
-              <a href="https://fannychen623.github.io/module-02-mini-project/"><img src="./assets/images/hero.jpg" alt="Portfolio page" /></a>
-              <p class="main-caption">Challenge 02 - My Digital Portfolio</p>
-            </section>
-            <section class="secondary-projects">
-              <section class="prework">
-                <a href="https://fannychen623.github.io/prework-study-guide/"><img src="./assets/images/prework.png" alt="Prework study guide" /></a>
-                <p class="secondary-caption">Prework Study Guide</p>
-              </section>
-              <section class="mini1">
-                <a href="https://fannychen623.github.io/module-01-mini-project/"><img src="./assets/images/miniproject1.png" alt="New website template" /></a>
-                <p class="secondary-caption">Mini Project 01 - New Website Template</p>
-              </section>
-              <section class="challenge1">
-                <a href="https://fannychen623.github.io/Challenge-01-Horiseon-Social-Solution-Services-Inc/"><img src="./assets/images/horiseon.png" alt="Horiseon web" /></a>
-                <p class="secondary-caption">Challenge 01 - Accessibility Improvement</p>
-              </section>
-              <section class="mini2">
-                <a href="https://fannychen623.github.io/module-02-mini-project/"><img src="./assets/images/csscheatsheet.png" alt="CSS Cheat Sheet" /></a>
-                <p class="secondary-caption">Mini Project 02 - CSS Cheat Sheet</p>
-              </section>
-            </section>
-        </section>
-
-        <section id="resume">
-            <h1>Resume</h1>
-            <iframe src="./assets/images/Resume.pdf" width="100%" height="500px" ></iframe>
-        </section>
-
-        <section id="contact">
-          <h1>Contact</h1>
-          <ul>
-            <li><i class="material-icons">email</i> Email: <a href="mailto:fannychen623@gmail.com">fannychen623@gmail.com</a></li>
-            <li><i class="material-icons">people</i> LinkedIn: <a href="https://www.linkedin.com/in/fanny23/">fanny23</a></li>
-            <li><i class="material-icons">phone</i> Phone Number: 917-815-8686</li>
-            <li><i class="material-icons">location_on</i> Location: Brooklyn, NY</li>
-          </ul>
-      </section>
-      </main>
-  
-      <footer>
-          <h2>Made by Fanny Chen</h2>
+      <!-- about section content  -->
+      <section id="about">
+          <h1>About</h1>
           <p>
-            Special Thanks to the Columbia BootCamp Team.
+              Born and raised in Brooklyn, NY. I graduated from The Cooper Union with a bachelors degree in Chemical Engineering. Post-graduation I worked as a Production Engineer at a medical device manufacturing company. Currently, I am a Physicist at the Memorial Sloan Kettering Cancer. I am part of the department of Medical Physics and assist with radiation therapy treatments. In addition to patient care work, I am also responsibile for a lot of the technical and digital projects at the office. I work closely with the IT department to create new applications and databases for the department. To further enhance my knowledge in the field, I am also attending the Columbia Coding Bootcamp part-time. 
           </p>
-      </footer>
+      </section>
 
-      <button onclick="topFunction()" id="top-button" title="Go to top">^ Home</button>
-      <script src="./assets/script.js"></script>
-    </body>
+      <!-- portfolio section -->
+      <section id="portfolio">
+          <h1>Portfolio</h1>
+          <!-- main project that is focused on the page -->
+          <section class="main-project">
+            <a href="https://fannychen623.github.io/module-02-mini-project/"><img src="./assets/images/hero.jpg" alt="Portfolio page" /></a>
+            <p class="main-caption">Challenge 02 - My Digital Portfolio</p>
+          </section>
+          <!-- all other projects that wrap with the page -->
+          <section class="secondary-projects">
+            <section class="prework">
+              <a href="https://fannychen623.github.io/prework-study-guide/"><img src="./assets/images/prework.png" alt="Prework study guide" /></a>
+              <p class="secondary-caption">Prework Study Guide</p>
+            </section>
+            <section class="mini1">
+              <a href="https://fannychen623.github.io/module-01-mini-project/"><img src="./assets/images/miniproject1.png" alt="New website template" /></a>
+              <p class="secondary-caption">Mini Project 01 - New Website Template</p>
+            </section>
+            <section class="challenge1">
+              <a href="https://fannychen623.github.io/Challenge-01-Horiseon-Social-Solution-Services-Inc/"><img src="./assets/images/horiseon.png" alt="Horiseon web" /></a>
+              <p class="secondary-caption">Challenge 01 - Accessibility Improvement</p>
+            </section>
+            <section class="mini2">
+              <a href="https://fannychen623.github.io/module-02-mini-project/"><img src="./assets/images/csscheatsheet.png" alt="CSS Cheat Sheet" /></a>
+              <p class="secondary-caption">Mini Project 02 - CSS Cheat Sheet</p>
+            </section>
+          </section>
+      </section>
+
+      <!-- embedded resume in pdf viewer format -->
+      <section id="resume">
+          <h1>Resume</h1>
+          <iframe src="./assets/images/Resume.pdf" width="100%" height="500px" ></iframe>
+      </section>
+
+      <!-- contact section with linked icons -->
+      <section id="contact">
+        <h1>Contact</h1>
+        <ul>
+          <li><i class="material-icons">email</i> Email: <a href="mailto:fannychen623@gmail.com">fannychen623@gmail.com</a></li>
+          <li><i class="material-icons">people</i> LinkedIn: <a href="https://www.linkedin.com/in/fanny23/">fanny23</a></li>
+          <li><i class="material-icons">phone</i> Phone Number: 917-815-8686</li>
+          <li><i class="material-icons">location_on</i> Location: Brooklyn, NY</li>
+        </ul>
+    </section>
+    </main>
+
+    <!-- footer with credits -->
+    <footer>
+        <h2>Made by Fanny Chen</h2>
+        <p>
+          Special Thanks to the Columbia BootCamp Team.
+        </p>
+    </footer>
+
+    <!-- button to scroll to the top of the page with referenced javascript -->
+    <button onclick="topFunction()" id="top-button" title="Go to top">^ Home</button>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
