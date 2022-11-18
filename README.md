@@ -105,5 +105,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 * **Referenced Code**: [How to add 'scroll to top' with JavaScript](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 
 ## **RESPONSIVE LAYOUT**
-### Screen Size: 720px
+### Screen Size: 750px
 >![Responsive Layout 1](/assets/images/Fanny%20Chen%20Digital%20Portfolio%20Responsive%20Layout1.png "Responsive Layout 1")
