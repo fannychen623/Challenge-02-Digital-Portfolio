@@ -1,6 +1,6 @@
 # Module 02 Challenge- Professional Portfolio
 
->**Application Link:** [Fanny Chen Digital Portfolio](https://fannychen623.github.io/Challenge-01-Horiseon-Social-Solution-Services-Inc/)
+>**Application Link:** [Fanny Chen Digital Portfolio](https://fannychen623.github.io/Challenge-02-Fanny-Chen-Digital-Portfolio/)
 >
 >**View:** [Description](#description) / [Portfolio Details](#portfolio-details) / [Responsive Layout Example](#responsive-layout)
 >
@@ -22,7 +22,8 @@
 >
 > Include projects that have active deployed sites.
 >
-> **Note**: Only includes projects completed in this class. Last updated note included in the footer section.
+> **Note**: Only includes projects completed in this class. 
+>Last updated note included in the footer section.
 > Currently do not have any personal projects that are activly deployed on the web.
 ## User Story
 
@@ -92,7 +93,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
   * Set certain `font-size` properties to `auto`.
   * Set certain `width` and `height` properties to `fit-content`.
   * Adjust the layout when the screen size is below 768px.
-    * Stack the items in the navigation bars vertically.
+    * Stack the items in the navigation bars vertically when viewport is too small.
     * Shrink the size of the hero image and the avatar.
     * Move the about section to the left to sit under the avatar.
     * Re-position the captions to the center of each project image.
