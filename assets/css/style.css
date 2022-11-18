@@ -58,7 +58,7 @@ main {
 }
 
 /* circle avatar image for about section */
-.avatar {
+#avatar {
     height: 400px;
     width: 400px;
     border-radius: 50%;
@@ -69,7 +69,7 @@ main {
 }
 
 /* about section style */
-#about {
+#about-me {
     margin-bottom: 100px;
     margin-left: 125px;
     line-height: 1.75;
@@ -98,6 +98,10 @@ h1 {
     display: block;
     width: 100%;
     text-align: center;
+}
+
+.main-projects a {
+    text-decoration: none;
 }
 
 .main-project img {
@@ -135,6 +139,10 @@ h1 {
     margin: 5px;
     margin-bottom: -20px;
     border-radius: 10%;
+}
+
+.secondary-projects a {
+    text-decoration: none;
 }
 
 .secondary-caption {
