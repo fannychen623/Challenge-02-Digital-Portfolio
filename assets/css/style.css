@@ -167,7 +167,7 @@ h1 {
     z-index: 1;
 }
 
-.prework:hover, .mini1:hover, .challenge1:hover, .mini2:hover {
+.prework:hover, .mini1:hover, .challenge1:hover, .mini2:hover, .challenge2:hover {
     transition: transform 0.5s ease-in-out;
     transform: scale(1.25);
     z-index: 1;
